@@ -244,15 +244,15 @@ grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
 # Mostramos el gráfico seleccionado
 if grafico_seleccionado == 'Nube de Palabras':
     sidebar.markdown("<div style='text-align: justify; font-size: 17px;'>Gráfico realizado con la librería WordCloud. Para la realización de dicho gráfico, se utilizó el archivo de texto ‘A donde va el viento’. Después de una depuración total del archivo txt, se creó un diccionario vacío y un bucle for para contabilizar cuántas veces se repite una palabra. Como resultado, se crea una nube de palabras, en la que mientrás más veces se repita una palabra, más grande es esta en el gráfico.</div>", unsafe_allow_html=True)
-    sidebar.image("Nube_Palabras.png", caption='Nube de Palabras con WordCloud', width=500)
+    sidebar.image("Nube_Palabras.png", caption='Nube de Palabras con WordCloud', width=380)
     pass
 elif grafico_seleccionado == 'Goles Anotados por el equipo Lecce como visitante y como local':
     sidebar.markdown("<div style='text-align: justify'>Gráfico realizado con la librería Matplotlib. Para la realización de dicho gráfico, se utilizó una base de datos de la primera división de la Liga Italiana (Serie A). Luego de una filtración del equipo Lecce, se calculó la frecuencia de goles anotados tanto como equipo local y visitante. Como resultado, mediante la librería Matplotlib, se crea un gráfico de barras evidenciado los goles anotados por Lecce..</div>", unsafe_allow_html=True)
-    sidebar.image("Lecce.png", caption='Goles Anotados por el equipo Lecce', width=500)
+    sidebar.image("Lecce.png", caption='Goles Anotados por el equipo Lecce', width=380)
     pass
 elif grafico_seleccionado == 'Promedio de Tarjetas Rojas como equipo Visitante':
     sidebar.markdown("<div style='text-align: justify'>Gráfico realizado con la librería Matplotlib y Seaborn. Para la realización de dicho gráfico, se filtraron las tarjetas rojas de los equipos como visitantes para, posteriormente, ser promediados. Finalmente, se crea el gráfico con un diseño colorido hecho por Seaborn con la paleta ‘Spectral’..</div>", unsafe_allow_html=True)
-    sidebar.image("Tarjetas_Rojas.png", caption='Promedio de Tarjetas Rojas', width=500)
+    sidebar.image("Tarjetas_Rojas.png", caption='Promedio de Tarjetas Rojas', width=380)
     pass
 
 # if grafico_seleccionado == 'Gráfico de Macroareas': Esta línea verifica si la opción seleccionada es 'Gráfico de Macroareas'.
